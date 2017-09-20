@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+
+/*border for clarity during development; comment out when done!*/
+/*div {
+      border: 2px;
+      color: red;
+      border-style: dashed;*/
+
+
 h1, h3 {
   font-family: 'Roboto', sans-serif;
   line-height: 30px;
@@ -16,22 +24,44 @@ h1, h3 {
     margin-bottom: 0px;
 }
 
-.container-fluid {
-background-color: #;
-height: 500px;
+.photo-left {
+  text-align: right;
+  margin-top: 60px;
+}
 
+ /*this container will affect ALL pages!*/
+.container-fluid {
+  background-color: #000;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-top: 60px;
+  float: left;
+}
+
+.photo {
+  margin-top: 60px;
+  background-color: #fff;
+}
+
+.thumb {
+  max-width: 100px;
 }
 
 
 /* Add a dark background color with a little bit see-through */
 .navbar {
-    margin-bottom: 0;
+    margin-bottom: 0px;
     background-color: #2d2d30;
     border: 0;
     font-size: 11px !important;
     letter-spacing: 4px;
-    opacity:0.9;
+    opacity:0.8;
     height: 20px;
+    max-width: 1200px;
 }
 
 /* Add a gray color to all navbar links */
