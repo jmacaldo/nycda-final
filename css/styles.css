@@ -4,8 +4,9 @@
 /*border for clarity during development; comment out when done!*/
 /*div {
       border: 2px;
-      color: red;
-      border-style: dashed;*/
+      border-color: red;
+      border-style: dashed;
+    }*/
 
 
 h1, h3 {
@@ -25,9 +26,47 @@ h1, h3 {
     margin-bottom: 0px;
 }
 
+/*classes in the photo page*/
 .photo-left {
   text-align: right;
-  margin-top: 60px;
+  margin-top: 30px;
+}
+
+.photo{
+  max-width: 880px;
+  max-height: 570px;
+  margin-top: 30px;
+  overflow: hidden;
+
+}
+
+/*carousel styles*/
+.carousel-inner{
+  max-width: 862px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+/*.photo {
+  margin-top: 40px;
+  background-color: #fff;
+}*/
+
+/*classes in the webdev section*/
+.webdev-left {
+  text-align: right;
+  margin-top: 40px;
+}
+
+.webdevcaptions {
+  margin-left: 35px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.webdevphoto{
+  max-width: 917px;
+  margin-top: 20px;
 }
 
  /*this container will affect ALL pages!*/
@@ -37,34 +76,43 @@ h1, h3 {
   margin-bottom: 0px;
 }
 
+
+
 .container {
   max-width: 1200px;
-  margin-top: 60px;
+
+  margin-top: 10px;
   margin: auto;
+
 }
 
-.photo {
-  margin-top: 60px;
-  background-color: #fff;
-}
+
 
 .thumb {
   max-width: 100px;
 }
 
 .footer {
-
-  background-color: #000;
-
-  opacity:0.8;
+  background-color: #2d2d30;
+  /*opacity:0.8;*/
   color: rgba(255,255,255,.8);
-  max-width: 1200px;
+  width: 1200px;
   margin: auto;
   margin-top: 10px;
   padding: 10px;
-
+  margin-bottom: 30px;
 }
 
+
+/*navbar classes below*/
+
+.navbar-fixed-top{
+  position: static;
+  opacity: 0.8;
+  background-color: #2d2d30;
+  margin-top: 20px;
+
+}
 /* Add a dark background color with a little bit see-through */
 .navbar {
     /*margin-top: 80px;
@@ -77,13 +125,19 @@ h1, h3 {
     height: 20px;
     max-width: 1200px;
     margin: auto;
+    margin-top: 30px;
 }
 
 /* Add a gray color to all navbar links */
 .navbar li a, .navbar .navbar-brand {
     color: #d5d5d5 !important;
+
 }
 
+.item {
+  max-height: 900px;
+  max-width: 900px;
+}
 /* On hover, the links will turn white */
 .navbar-nav li a:hover {
     color: #fff !important;
