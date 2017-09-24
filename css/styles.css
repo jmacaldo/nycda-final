@@ -3,7 +3,7 @@
 
 /*border for clarity during development; comment out when done!*/
 /*div {
-      border: 2px;
+      border: 1px;
       border-color: red;
       border-style: dashed;
     }*/
@@ -15,50 +15,53 @@ h1, h3 {
 }
 
 .jumbotron {
-    position: relative;
+    position: static;
     /*background-image: url('../img/bg1.jpg');*/
-    width: 1200px;
+    max-width: 1200px;
     margin:auto;
-    height: 743px;
+    height: 840px;
     background-size: cover;
     overflow: hidden;
     color: white;
-    margin-bottom: 0px;
+    /*margin-bottom: 0px;
+    margin-top: 40px;*/
     z-index: -100;
 }
 
 /*video bg properties*/
 #bg-video {
-    top: -0px;
+    top: 0px;
     left: 0px;
-    position: absolute;
+    /*position: absolute;*/
+    position: static;
     height: 100%;
+    width: 100%;
     z-index: -100;
+
 }
 .jumbovidtext {
     z-index: 1;
     position: absolute;
     font-family: 'Roboto', sans-serif;
     background-color: #000;
-    opacity: .6;
+    opacity: .4;
     margin-left: 50px;
     margin-top: 100px;
     padding: 40px;
     font-size: 11px !important;
     letter-spacing: 4px;
-    color: #fff;
 }
 
 /*classes in the photo page*/
 .photo-left {
   text-align: right;
-  margin-top: 30px;
+  margin-top: 64px;
 }
 
 .photo{
   max-width: 880px;
-  max-height: 570px;
-  margin-top: 30px;
+  max-height: 600px;
+  margin-top: 80px;
   overflow: hidden;
 
 }
@@ -67,8 +70,10 @@ h1, h3 {
 .carousel-inner{
   max-width: 862px;
   margin-bottom: 0px;
-  margin-top: 10px;
+  margin-top: 60px;
 }
+
+
 
 /*.photo {
   margin-top: 40px;
@@ -78,7 +83,8 @@ h1, h3 {
 /*classes in the webdev section*/
 .webdev-left {
   text-align: right;
-  margin-top: 40px;
+  margin-top: 10px;
+
 }
 
 .webdevcaptions {
@@ -89,7 +95,8 @@ h1, h3 {
 
 .webdevphoto{
   max-width: 917px;
-  margin-top: 20px;
+  margin-top: 0px;
+
 }
 
  /*this container will affect ALL pages!*/
@@ -104,9 +111,9 @@ h1, h3 {
 .container {
   max-width: 1200px;
 
-  margin-top: 10px;
+  margin-top: 50px;
   margin: auto;
-  opacity: .4;
+
 
 }
 
@@ -117,8 +124,7 @@ h1, h3 {
 }
 
 .footer {
-  background-color: #2d2d30;
-  /*opacity:0.8;*/
+  background-color: rgba(51,51,51,1);
   color: rgba(255,255,255,.8);
   width: 1200px;
   margin: auto;
@@ -126,63 +132,59 @@ h1, h3 {
   padding: 10px;
   margin-bottom: 30px;
 }
-
-
-/*navbar classes below*/
-
-.navbar-fixed-top{
-  position: static;
-  opacity: 0.8;
-  /*background-color: #2d2d30;*/
-
-  margin-top: 20px;
+.footer-index {
+  margin-bottom: 0;
+  background-color: #29292c;
+  border: 0;
+  font-size: 11px !important;
+  letter-spacing: 4px;
+  opacity:0.4;
+  width: 1200px;
+  margin: auto;
+  margin-top: 642px;
+  padding: 10px;
 
 }
+
+
+/*navbar styles below*/
 /* Add a dark background color with a little bit see-through */
+
+
+
 .navbar {
-    /*margin-top: 80px;
-    margin-bottom: 0px;*/
+    margin-bottom: 0;
     background-color: #2d2d30;
     border: 0;
     font-size: 11px !important;
     letter-spacing: 4px;
-
-    height: 20px;
+    opacity:0.8;
     max-width: 1200px;
     margin: auto;
-    margin-top: 30px;
+    margin-bottom: 20px;
     z-index: 200;
-    opacity:0.8;
+
 }
 
 /* Add a gray color to all navbar links */
 .navbar li a, .navbar .navbar-brand {
-    color: #d5d5d5; !important;
-
-
+    color: #d5d5d5 !important;
 }
 
-.item {
-  max-height: 900px;
-  max-width: 900px;
-}
 /* On hover, the links will turn white */
 .navbar-nav li a:hover {
     color: #fff !important;
-
 }
 
 /* The active link */
 .navbar-nav li.active a {
     color: #fff !important;
-    background-color:#29292c !important;
-
+    background-color: #aaa !important;
 }
 
 /* Remove border color from the collapsible button */
 .navbar-default .navbar-toggle {
     border-color: transparent;
-
 }
 
 /* Dropdown */
@@ -195,11 +197,58 @@ h1, h3 {
 /* Dropdown links */
 .dropdown-menu li a {
     color: #000 !important;
-
 }
 
 /* On hover, the dropdown links will turn red */
 .dropdown-menu li a:hover {
-    background-color: red !important;
+    background-color: #d5d5d5 !important;
+    opacity: .8;
 
+}
+
+#indexnav{
+  margin-top: 600px;
+  opacity: .5;
+}
+
+#webnav{
+  position: static;
+}
+
+#webdevright {
+  z-index: -200;
+  max-width: 100%;
+}
+
+.index {
+  margin-top: 25px;
+}
+
+#aboutheader {
+  text-align: right;
+  margin-bottom: 30px;
+
+
+}
+
+#aboutme{
+  margin-top: 60px;
+  width: 120%;
+  padding: 0px;
+  height: 800px;
+}
+
+#wide300{
+  width: 300px;
+  
+}
+.about-left {
+  text-align: right;
+  margin-top: 0px;
+  /*border: 0px;
+  padding: 10px;
+  background-color: #000;
+  opacity: .9;
+  color: #fff;
+  overflow: hidden;*/
 }
